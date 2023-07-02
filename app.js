@@ -7,6 +7,7 @@ function declare() {
   toggle_btn = document.querySelector(".toggle-btn");
   big_wrapper = document.querySelector(".big-wrapper");
   hamburger_menu = document.querySelector(".hamburger-menu");
+  show_btn = document.querySelector(".b-head");
 }
 
 const main = document.querySelector("main");
@@ -39,6 +40,13 @@ function toggleAnimation() {
     declare();
     events();
   });
+}
+
+function showcontent() {
+
+  // Clone the wrapper
+  const content=document.getElementsByClassName('b-content')
+  content.style.display='inline';
 }
 
 function events() {
